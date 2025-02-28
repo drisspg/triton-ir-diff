@@ -1,18 +1,14 @@
-# Triton IR Diff
+# Triton Differ
 
 A command-line tool for generating HTML comparisons of Triton IR files.
 
 ## Installation
 
-```bash
-pip install triton-ir-diff
-```
-
 Or install directly from the repository:
 
 ```bash
 git clone https://github.com/yourusername/triton-ir-diff.git
-cd triton-ir-diff
+cd triton_differ
 pip install -e .
 ```
 
@@ -21,13 +17,13 @@ pip install -e .
 ### Compare two files
 
 ```bash
-triton-ir-diff compare path/to/file1.ttir path/to/file2.llir
+triton_differ path/to/file1.ttir path/to/file2.ttir
 ```
 
 ### Generate comparisons for all IR files in a directory
 
 ```bash
-triton-ir-diff all path/to/directory
+triton_differ good/ bad/
 ```
 
 This will:
@@ -38,8 +34,7 @@ This will:
 
 ### Options
 
-- `-o, --output`: Specify the output HTML file path (for `compare` command)
-- `-o, --output-dir`: Specify the output directory for HTML files (for `all` command)
+- `-o, --output-dir`: Specify the output directory for HTML files
 
 ## Supported File Types
 
